@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Whispr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="chat-container">
+    <div class="header">Whispr</div>
+    <div class="chat-box" id="chatBox"></div>
+    <div class="input-box">
+      <input type="text" id="userInput" placeholder="พิมพ์ความรู้สึกของคุณ..." onkeydown="if(event.key==='Enter') sendMessage()">
+      <button onclick="sendMessage()">ส่ง</button>
+      <button onclick="resetChat()">รีเซ็ต</button>
+    </div>
+  </div>
+
+  <!-- ปุ่มเพลงลอยมุม -->
+  <button id="musicBtn">🎵</button>
+   <audio id="bgMusic" src="media/music.mp3" loop>
+</audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
